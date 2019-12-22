@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<!-- jumbotron -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+			<div class="jumbotron jumbotron-fluid">
+			  <div class="container">
+			    <h1>Questionnaire</h1>
+			    <h3 class="display-4">Answer the questions using a scale of 1 (strongly disagree) to 5 (strongly agree)</h3>
+			  </div>
+			</div>
+		</div>
+	</div> 
+	<!-- form -->
+	<div class="row">
+		<div class="col-lg-2" id="spacer"></div>
+			<div class="col-lg-8">
+	        <div class="card">
+			<!-- name and image-->
+			<div class="card-body">
+	          	<h2>About You</h2>
+				<hr>
+				<form method="POST" role="form">
+					<div class="form-group">
+					<label for="name">Name (required)</label>
+					<input type="text" class="form-control" id="name" required>
+					</div>
+					<div class="form-group">
+					<label for="photo">Link to Photo (required)</label>
+					<input type="text" class="form-control" id="photo" required>
+					</div>
+				</form>
+			</div>
+			<!-- questions -->
+			<div class="card-body">
+				<h2>Questions</h2>
+				<hr>
+				<div class="form-group">
+					<label for="question-1"><h4>#1. You like javascript.</h4></label>
+					<div class="card-body" id="options">
+						<div class="radio chosen-select" id="q1">
+							<label class="radio-inline"><input type="radio" name="q1" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="q1" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="q1" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="q1" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="q1" value="5">5</label>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<label for="question-1"><h4>#2. You hate javascript.</h4></label>
+					<div class="card-body" id="options">
+						<div class="radio chosen-select" id="q2">
+							<label class="radio-inline"><input type="radio" name="q2" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="q2" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="q2" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="q2" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="q2" value="5">5</label>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<label for="question-1"><h4>#3. You don't undertand javascript.</h4></label>
+					<div class="card-body" id="options">
+						<div class="radio chosen-select" id="q3">
+							<label class="radio-inline"><input type="radio" name="q3" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="q3" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="q3" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="q3" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="q3" value="5">5</label>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<label for="question-1"><h4>#4. You can't remember anything that you did in class last week.</h4></label>
+					<div class="card-body" id="options">
+						<div class="radio chosen-select" id="q4">
+							<label class="radio-inline"><input type="radio" name="q4" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="q4" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="q4" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="q4" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="q4" value="5">5</label>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<label for="question-1"><h4>#5. Your favorite TA is Justin.</h4></label>
+					<div class="card-body" id="options">
+						<div class="radio chosen-select" id="q5">
+							<label class="radio-inline"><input type="radio" name="q5" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="q5" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="q5" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="q5" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="q5" value="5">5</label>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<label for="question-1"><h4>#6. You favorite TA is Dan.</h4></label>
+					<div class="card-body" id="options">
+						<div class="radio chosen-select" id="q6">
+							<label class="radio-inline"><input type="radio" name="q6" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="q6" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="q6" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="q6" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="q6" value="5">5</label>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<label for="question-1"><h4>#7. You miss Irving.</h4></label>
+					<div class="card-body" id="options">
+						<div class="radio chosen-select" id="q7">
+							<label class="radio-inline"><input type="radio" name="q7" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="q7" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="q7" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="q7" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="q7" value="5">5</label>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<label for="question-1"><h4>#8. It's about to get bananas.</h4></label>
+					<div class="card-body" id="options">
+						<div class="radio chosen-select" id="q8">
+							<label class="radio-inline"><input type="radio" name="q8" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="q8" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="q8" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="q8" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="q8" value="5">5</label>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<label for="question-1"><h4>#9. You've run out of ideas for questions.</h4></label>
+					<div class="card-body" id="options">
+						<div class="radio chosen-select" id="q9">
+							<label class="radio-inline"><input type="radio" name="q9" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="q9" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="q9" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="q9" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="q9" value="5">5</label>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<label for="question-1"><h4>#10. Hey look, a squirrel!</h4></label>
+					<div class="card-body" id="options">
+						<div class="radio chosen-select" id="q10">
+							<label class="radio-inline"><input type="radio" name="q10" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="q10" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="q10" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="q10" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="q10" value="5">5</label>
+						</div>
+					</div>
+				</div>
+				<hr>
+	            <br>
+	            <div class="text-right">
+	              	<button type="button" class="btn btn-secondary btn-md submit" id="add-btn"  data-toggle="modal" data-target="#myModal" >Find Friends</button>
+	            </div>
+	        </div>
+	     </div>
+		</div>
+	</div>
+
+	<!-- Bootstrap modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="bestFriend">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="bestFriend">You've made a friend!</h4>
+	      </div>
+	      <div class="modal-body" id="friend-info">
+				<h5 id="friend-name"></h5>
+				<img id="friend-photo" src="" alt="Meet your new friend!">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	let allAnswers = [];
+
+	// when submit button is clicked
+	$(".submit").on("click", function(event) {
+		// check to see if all fields are filled out
+		if (($("#name").val() != "") && ($("#photo").val() != "" ) && ($('input[name="q1"]:checked').val()) && ($('input[name="q2"]:checked').val()) && ($('input[name="q3"]:checked').val()) && ($('input[name="q4"]:checked').val()) && ($('input[name="q5"]:checked').val()) && ($('input[name="q6"]:checked').val()) && ($('input[name="q7"]:checked').val()) && ($('input[name="q8"]:checked').val()) && ($('input[name="q9"]:checked').val()) && ($('input[name="q10"]:checked').val())) {
+			// create new friend object from form
+			let newFriend = {
+			name: $("#name").val().trim(),
+			photo: $("#photo").val().trim(),
+			answers: [
+				$('input[name="q1"]:checked').val(),
+				$('input[name="q2"]:checked').val(),
+				$('input[name="q3"]:checked').val(),
+				$('input[name="q4"]:checked').val(),
+				$('input[name="q5"]:checked').val(),
+				$('input[name="q6"]:checked').val(),
+				$('input[name="q7"]:checked').val(),
+				$('input[name="q8"]:checked').val(),
+				$('input[name="q9"]:checked').val(),
+				$('input[name="q10"]:checked').val()
+			]
+		};
+		// post request
+		$.post("/api/friends", newFriend, function(data){
+			// the process to determine the best match
+			let totalDifference = 0; // object that will contain the score differences; starts at 0
+			let differenceArray = []; // array that will hold the differences between the user and the existing friends
+			let currentUser = data[data.length-1]; // current user object
+			let bestMatch = "";
+
+			// loop through each friend in the object
+			for (let j = 0; j < data.length; j ++) {
+				// loop through the 10 answer values in the answer key of the object
+				for (let i = 0; i < 10; i ++) {
+					// calculate the difference between each answer
+					totalDifference += Math.abs(currentUser.answers[i]-data[j].answers[i]);	
+				}
+				// push the total to the array
+				differenceArray.push(totalDifference);
+				// reset the difference to 0
+				totalDifference = 0;
+			}
+			// formula for grabbing the index of the lowest difference, which is the best match
+			let min = differenceArray[0]; // default to the first item in the array
+			let minIndex = 0; // default to the 0 index
+			// loop through to test which is the lowest value in the array
+			for (var i = 1; i < differenceArray.length - 1; i++) {
+        		if (differenceArray[i] < min) {
+				// this is the index of the lowest number in the match array
+				minIndex = i;
+        		}
+			}
+			
+			// variable that holds the best match
+			bestMatch = data[minIndex];
+			// this populates the modal fields
+			$("#friend-name").text("Hi " + currentUser.name + ", my name is " + bestMatch.name + "!");
+			$("img#friend-photo").attr("src", bestMatch.photo);
+
+			// clears the form on submit
+			$("#name").val("");
+			$("#photo").val("");
+			$('input[type="radio"]').attr('checked', false);
+		}); 
+
+		// if user doesn't fill out entire form
+		} else {
+			alert("Please fill out all fields");
+			return false;
+		}
+	
+	});
+</script>
