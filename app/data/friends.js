@@ -12,7 +12,7 @@ let friendsArray = [
         4,
         4,
         4,
-        4
+        5
       ]
   },
   {
